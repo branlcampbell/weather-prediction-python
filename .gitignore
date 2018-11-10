@@ -1,2 +1,3 @@
 *.pyc
 API_Key.py
+*.json
