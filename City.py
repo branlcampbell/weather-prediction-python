@@ -8,7 +8,6 @@
 #   precip:     Float:  Total precipitation city has experienced in inches
 #   avgTemp:    Double: Average temperature of the city within the past 10 days
 class City(object):
-
     def __init__(self, name, lat, long, precip, avgTemp):
         self.Name = name
         self.Lat = lat

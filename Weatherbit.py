@@ -10,7 +10,7 @@ api_key = API_Key.API_Key().Weatherbit_Key
 # Authenticate our API Key. This variable will be used for all API calls.
 weatherbit = Api(api_key)
 
-# Set the API for retreving the daily forecast.
+# Set the API for retrieving the daily forecast.
 weatherbit.set_granularity('daily')
 
 # Gets the forecast for the current day.
@@ -43,6 +43,10 @@ def get_daily_forecast(lat, long):
 def get_previous_forecast(lat, long, start_date, end_date):
     history = weatherbit.get_history(lat = lat, lon = long, start_date = start_date, end_date = end_date)
     precip = history.json['data'][0]['precip']
+    # For some reason, certain cities did not return precipitation data from their API call.
+    # To account for this, JSON that returns 'None' will instead return 0.0
+    if(precip == None):
+        precip = 0.0
     avg_temp = history.json['data'][0]['temp']
     avg_temp = avg_temp * 1.8 + 32 # Convert to Fahrenheit
     max_temp = history.json['data'][0]['max_temp']

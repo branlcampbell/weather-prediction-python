@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>New York, NY, USA</name>
+            <description>Average temperature: 45.68
+Average precipitation: 4.0
+Average precipitation per hour: 0.166666666667
+</description>
+            <Point id="2">
+                <coordinates>-74.0059728,40.7127753,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Boston, MA, USA</name>
+            <description>Average temperature: 40.82
+Average precipitation: 11.0
+Average precipitation per hour: 0.458333333333
+</description>
+            <Point id="4">
+                <coordinates>-71.0588801,42.3600825,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Philadelphia, PA, USA</name>
+            <description>Average temperature: 38.3
+Average precipitation: 0.0
+Average precipitation per hour: 0.0
+</description>
+            <Point id="6">
+                <coordinates>-75.1652215,39.9525839,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>Chicago, IL, USA</name>
+            <description>Average temperature: 24.62
+Average precipitation: 3.0
+Average precipitation per hour: 0.125
+</description>
+            <Point id="8">
+                <coordinates>-87.6297982,41.8781136,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>Denver, CO, USA</name>
+            <description>Average temperature: 40.64
+Average precipitation: 0.0
+Average precipitation per hour: 0.0
+</description>
+            <Point id="10">
+                <coordinates>-104.990251,39.7392358,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>Seattle, WA, USA</name>
+            <description>Average temperature: 44.06
+Average precipitation: 2.0
+Average precipitation per hour: 0.0833333333333
+</description>
+            <Point id="12">
+                <coordinates>-122.3320708,47.6062095,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>Los Angeles, CA, USA</name>
+            <description>Average temperature: 62.78
+Average precipitation: 0.0
+Average precipitation per hour: 0.0
+</description>
+            <Point id="14">
+                <coordinates>-118.2436849,34.0522342,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>Houston, TX, USA</name>
+            <description>Average temperature: 51.8
+Average precipitation: 9.0
+Average precipitation per hour: 0.375
+</description>
+            <Point id="16">
+                <coordinates>-95.3698028,29.7604267,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>Las Vegas, NV, USA</name>
+            <description>Average temperature: 48.56
+Average precipitation: 0.0
+Average precipitation per hour: 0.0
+</description>
+            <Point id="18">
+                <coordinates>-115.1398296,36.1699412,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>Miami, FL, USA</name>
+            <description>Average temperature: 79.7
+Average precipitation: 0.0
+Average precipitation per hour: 0.0
+</description>
+            <Point id="20">
+                <coordinates>-80.1917902,25.7616798,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
