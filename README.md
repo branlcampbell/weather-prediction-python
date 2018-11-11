@@ -2,7 +2,7 @@
 
 This program utilizes the Google Geocoding API and Weatherbit.io API to gather weather data for major US cities. An average for each portion of a city's weather data is found and all data is saved in a City object. Once all objects are created, a KML file is generated using simpleKML. This KML file contains points on the map at the location of each city. These points contain the data gathered and can potentially be used to analyze weather patterns in areas and predict if a drought or flood may occur.
 
-![alt text](https://raw.githubusercontent.com/branlcampbell/weather-prediction-python/blob/master/to/Screenshot.png)
+![](/Screenshot.png)
 
 ## Getting Started
 
@@ -23,9 +23,8 @@ In order to retrieve the required JSON data, you must have API keys registered w
 The following packages are required in order to run this program:
 * simpleKML
 * pyweatherbit
-* googlemaps
 
-To install, enter the following command through your terminal:
+To install, enter the following commands through your terminal:
 
 ```
 pip install simplekml
@@ -33,10 +32,6 @@ pip install simplekml
 
 ```
 pip install pyweatherbit
-```
-
-```
-pip install -U googlemaps
 ```
 
 ### Installing
@@ -63,14 +58,15 @@ Once the program has finished its execution, you will see that a file named Data
 
 ## Bugs / Issues
 
-To notify me of any bugs / issues running this script, please contact me with all errors printed to the console.
+To notify of any bugs / issues running this script, please contact me with all errors printed to the console.
 
 
 ## Built With
 
-* [Python](http://python.org/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](http://python.org/) - Language used.
+* [Weatherbit.io](https://www.weatherbit.io/api) - API for weather data.
+* [Google Cloud Platform](https://cloud.google.com/maps-platform/) - API for geocoding cities.
+* [weatherbit-python](https://github.com/weatherbit/weatherbit-python) - Python wrapper for Weatherbit API calls.
 
 ## Authors
 
