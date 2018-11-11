@@ -2,13 +2,31 @@
 # singleton to gather all necessary information from the API.
 import googlemaps
 import API_Key
+import json
+import urllib
 
 # Get the private key string from API_KEY.
-api_key = API_Key.API_Key().Google_Key
+api = API_Key.API_Key().Google_Key
 
-gmaps = googlemaps.Client(key = api_key)
+# Gets geocode coordinates for the specified city by making a urllib request
+# through the string generated. The JSON response is then converted and parsed
+# for the necessary information.
+# Params:
+#   city: String: The name of the city to be geocoded.
+# Return: List containing the city's name, latitude, and longitude.
+def get_geocode(city):
 
-# Geocoding an address
-geocode_result = gmaps.geocode('New York City, NY')
+    base = r"https://maps.googleapis.com/maps/api/geocode/json?"
+    addP = "address=" + city.replace(" ","+")
+    GeoUrl = base + addP + "&key=" + api
+    response = urllib.urlopen(GeoUrl)
+    jsonRaw = response.read()
+    jsonData = json.loads(jsonRaw)
 
-print geocode_result
+    if jsonData['status'] == 'OK':
+        results = jsonData['results'][0]
+        finList = [results['formatted_address'],results['geometry']['location']['lat'],results['geometry']['location']['lng']]
+    else:
+        finList = [None,None,None]
+
+    return finList

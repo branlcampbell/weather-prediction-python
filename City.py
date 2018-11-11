@@ -15,19 +15,3 @@ class City(object):
         self.Long = long
         self.Precip = precip
         self.AvgTemp = avgTemp
-
-    # Accessors for each attribute.
-    def get_name(self):
-        return self.Name
-
-    def get_lat(self):
-        return self.Lat
-
-    def get_long(self):
-        return self.Long
-
-    def get_precip(self):
-        return self.Precip
-
-    def get_avg_temp(self):
-        return self.AvgTemp
